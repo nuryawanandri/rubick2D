@@ -1,0 +1,23 @@
+body {
+  background: lightgray;
+}
+.row {
+  display: flex;
+}
+.cell {
+  border: 1px solid #dddddd;
+  width: 70px;
+  height: 70px;
+}
+.container {
+  display: flex;
+}
+.board {
+  margin: 10px;
+}
+.hidden {
+  display: none;
+}
+.show {
+  display: block;
+}

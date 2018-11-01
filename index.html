@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles.css">
+  <title>Rubick Board</title>
+</head>
+<body>
+  <h1>Rubick Board</h1>
+  <div class="container">
+    <div class="board" id="board-rubick">
+    </div>
+    <div class="board" id="board-answer">
+    </div>
+  </div>
+  <div>Description : Move tile to empty area (tile with gray color) with arrow key..</div>
+  <div>Generate answer with click button "Generate Answer"</div>
+  <button onclick="renderAnswer()">Generate Answer</button>
+  <button onclick="showCheat()">Using Cheat!!!</button>
+  <br>
+  <div id='container-cheat' class="hidden">
+    <input placeholder="first tile (y,x)" id='first-tile'><input placeholder="second tile (y,x)" id='second-tile'>
+    <button onclick="cheatSwapCell()">submit</button>
+  </div>
+  <h1 id='message'></h1>
+</body>
+<script src="script.js"></script>
+</html>
